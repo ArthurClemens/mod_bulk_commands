@@ -20,8 +20,13 @@
 observe_postback_notify(#postback_notify{message="bulk_delete"}, Context) ->
     Json = z_context:get_q("data", Context),
     AnimationSpeed = z_context:get_q("animationSpeed", Context),
+    TableId = z_context:get_q("tableId", Context),
+
     JsonData = mochijson2:decode(Json),
-    DoneAction = {delete_done, []},
+    DoneAction = {delete_done, [
+        {tableId, TableId},
+        {animationSpeed, AnimationSpeed}
+    ]},
     Actions = lists:foldl(
         fun({struct, [{_, HrefBin}, {_, RowIdBin}]}, Acc) ->
             Href = z_convert:to_list(HrefBin),
