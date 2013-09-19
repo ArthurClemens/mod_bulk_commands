@@ -1,3 +1,11 @@
 .adminBulkCommands .btn-toolbar {
     margin-top: 0;
 }
+.adminBulkCommands .dropdown-menu li a.adminBulkCommandsHeader {
+    color: #ccc;
+    font-weight: bold;
+    text-transform: uppercase;
+    pointer-events: none;
+    cursor: default;
+    font-size: 11px;
+}
