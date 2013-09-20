@@ -32,7 +32,7 @@ Zotonic <= 0.6:
 
         git clone https://github.com/ArthurClemens/mod_bulk_commands.git mod_bulk_commands
 
-Activate the module in System > Modules.
+Activate the module in Admin > System > Modules.
 
 
 ## Requirements
