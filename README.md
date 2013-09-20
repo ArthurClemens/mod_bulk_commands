@@ -10,21 +10,35 @@ The module adds select options for lists:
 
 Select the item you want to change, then press the action button. 
 
-For now only the Delete action has been implemented.
+Implemented commands:
+
+* Delete
+* Set published state
+
 
 ## Checks
 
 * ACL rights are maintained.
 * It is not possible to delete a page that is protected.
 
+
 ## Installation
 
-1. Download or `git clone` this module into your Modules directory.
-1. Activate the module in System > Modules.
+Zotonic >= 0.7:
+
+        zotonic installmodule mod_bulk_commands
+
+Zotonic <= 0.6:
+
+        git clone https://github.com/ArthurClemens/mod_bulk_commands.git mod_bulk_commands
+
+Activate the module in System > Modules.
+
 
 ## Requirements
 
 JavaScript should be enabled in the browser.
+
 
 ## To do
 
