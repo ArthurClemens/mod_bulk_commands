@@ -86,7 +86,6 @@ action_command(Command, Args, Context) when Command == published ->
             Props = [
                 {is_published, State}
             ],
-            lager:warning("is_published=~p", [bool_to_integer(State)]),
             m_rsc:update(PageId, Props, Context),
             {highlight, [{speed, AnimationSpeed}, {rowId, RowId}, {is_published, bool_to_integer(State)}]};
         false ->
