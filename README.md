@@ -13,8 +13,9 @@ Select the item you want to change, then press the action button.
 Implemented commands:
 
 * Delete
-* Set published state
-
+* Set 'published' state
+* Set 'featured' state
+* Set 'protected' state
 
 ## Checks
 
@@ -24,15 +25,22 @@ Implemented commands:
 
 ## Installation
 
-Zotonic >= 0.7:
+Zotonic `>= 0.7`:
 
         zotonic installmodule mod_bulk_commands
 
-Zotonic <= 0.6:
+Zotonic `<= 0.6`:
 
         git clone https://github.com/ArthurClemens/mod_bulk_commands.git mod_bulk_commands
 
 Activate the module in Admin > System > Modules.
+
+
+## Configuration
+
+At activation, a config value `module_bulk_commands.pages` is set. This contains a list of comma-separated pages where the module should appear.
+
+Default value: `dashboard,overview,media`.
 
 
 ## Requirements
