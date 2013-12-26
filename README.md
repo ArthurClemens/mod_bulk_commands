@@ -1,21 +1,10 @@
 # Bulk actions for Zotonic admin
 
-This is a JavaScript-based drop-in module.
-
-The module adds select options for lists:
-
-* select this row
-* select all rows
-* select none
-
-Select the item you want to change, then press the action button. 
-
-Implemented commands:
+Select one or more items from the list, then perform an action. Implemented commands:
 
 * Delete
-* Set 'published' state
-* Set 'featured' state
-* Set 'protected' state
+* Set state: published, featured, protected
+
 
 ## Checks
 
@@ -47,10 +36,4 @@ Default value: `dashboard,overview,media`.
 
 JavaScript should be enabled in the browser.
 
-
-## To do
-
-* More actions
-* Translations
-* Categories page
 
