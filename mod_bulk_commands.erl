@@ -1,13 +1,13 @@
 %% @author Arthur Clemens <arthur@visiblearea.com>
 %% @copyright 2013 Arthur Clemens
 %% Date: 2013-12-25
-%% @doc Bulk admin commands to delete multiple items at once.
+%% @doc Admin add-on to delete or change the state of multiple items at once.
 
 -module(mod_bulk_commands).
--author("Arthur Clemens").
+-author("Arthur Clemens <arthur@visiblearea.com>").
 
 -mod_title("Bulk admin commands").
--mod_description("Bulk admin commands to delete multiple items at once.").
+-mod_description("Admin add-on to delete or change the state of multiple items at once.").
 -mod_prio(500).
 -mod_depends([admin]).
 
