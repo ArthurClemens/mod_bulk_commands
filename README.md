@@ -3,7 +3,7 @@
 Select one or more items from the list, then perform an action. Implemented commands:
 
 * Delete
-* Set state: published, featured, protected
+* Change state attributes: published, featured, protected
 
 
 ## Checks
@@ -27,9 +27,12 @@ Activate the module in Admin > System > Modules.
 
 ## Configuration
 
-At activation, a config value `module_bulk_commands.pages` is set. This contains a list of comma-separated pages where the module should appear.
+At activation, 2 config values are set:
 
-Default value: `dashboard,overview,media`.
+* `module_bulk_commands.pages` contains a comma-separated list of page names where the module should appear; default value: `dashboard,overview,media`
+* `module_bulk_commands.commands` contains a comma-separated list of command names to appear in the interface; default value: `delete,published,featured,protected`
+
+Change the config values to your requirements.
 
 
 ## Requirements
