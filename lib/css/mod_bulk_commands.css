@@ -9,3 +9,17 @@
     cursor: default;
     font-size: 11px;
 }
+
+.adminBulkCommands .popover-title {
+    display: none;
+}
+.adminBulkCommands .popover-content {
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.adminBulkCommands .popover .btn {
+    width: 5em;
+}
+.adminBulkCommands .popover .btn + .btn {
+    margin-top: 5px;
+}
