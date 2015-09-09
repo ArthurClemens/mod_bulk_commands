@@ -16,6 +16,15 @@
 .adminBulkCommands .popover-content {
     background: #fff;
 }
+.adminBulkCommands .popover-content:before,
+.adminBulkCommands .popover-content:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.adminBulkCommands .popover-content:after {
+    clear: both;
+}
+
 .adminBulkCommands .popover .btn {
     width: 5em;
 }
