@@ -29,7 +29,7 @@ Activate the module in Admin > System > Modules.
 
 At activation, 2 config values are set:
 
-* `module_bulk_commands.pages` contains a comma-separated list of page names where the module should appear; default value: `dashboard,overview,media`
+* `module_bulk_commands.pages` contains a comma-separated list of page names where the module should appear; default value: `overview,media`
 * `module_bulk_commands.commands` contains a comma-separated list of command names to appear in the interface; default value: `delete,published,featured,protected`
 
 Change the config values to your requirements.

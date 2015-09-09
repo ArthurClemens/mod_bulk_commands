@@ -24,7 +24,7 @@
 init(Context) ->
     PagesConfigSet = m_config:get(?MODULE, pages, Context),
     case PagesConfigSet of 
-        undefined -> m_config:set_value(?MODULE, pages, "dashboard,overview,media", Context);
+        undefined -> m_config:set_value(?MODULE, pages, "overview,media", Context);
         _ -> undefined
     end,
     CommandsConfigSet = m_config:get(?MODULE, commands, Context),
