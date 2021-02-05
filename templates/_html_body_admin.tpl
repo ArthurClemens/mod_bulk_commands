@@ -1,4 +1,4 @@
-
+{% if selected != "dashboard" %}
 {% with m.config.mod_bulk_commands.pages.value|split:",",
         m.config.mod_bulk_commands.commands.value
    as
@@ -13,3 +13,4 @@
             "css/mod_bulk_commands.css"
         %}
 {% endwith %}
+{% endif %}
